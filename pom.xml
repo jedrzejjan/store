@@ -62,14 +62,15 @@
                 <artifactId>flyway-maven-plugin</artifactId>
                 <version>5.2.1</version>
                 <configuration>
-                    <url>jdbc:h2:~/test</url>
-                    <seller>root</seller>
+                    <url>jdbc:h2:~/store</url>
+                    <user>root</user>
                     <password>root</password>
                 </configuration>
                 <dependencies>
                     <dependency>
                         <groupId>com.h2database</groupId>
                         <artifactId>h2</artifactId>
+                        <version>1.4.197</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -80,6 +81,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>
